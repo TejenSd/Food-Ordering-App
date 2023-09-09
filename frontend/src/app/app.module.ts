@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/partials/header/header.component';
 import { HomeComponent } from './components/pages/home/home.component';
-import { RatingModule } from 'ng-starrating';
 
 @NgModule({
   declarations: [
@@ -15,8 +14,8 @@ import { RatingModule } from 'ng-starrating';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    RatingModule
+    AppRoutingModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
