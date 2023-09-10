@@ -20,6 +20,10 @@ export class HomeComponent implements OnInit {
       {
         this.foods = this.foodService.getAllFoodBySearchTerm(params.searchTerm);
       }
+      else if(params.tag)
+      {
+          this.foods =this.foodService.getAllFoodByTag(params.tag)
+      }
       else 
       {
         this.foods = foodService.getAll();
